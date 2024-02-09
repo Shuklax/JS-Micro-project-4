@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #3b4664;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 536px;
+  height: 650px;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.display {
+  width: 536px;
+  height: 142.728px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #181f32;
+}
+
+.numpad {
+  width: 536px;
+  height: 487px;
+  flex-shrink: 0;
+  margin-top: 26px;
+  background: #252d44;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 48px 35px 46px 35px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 22px;
+}
+
+input {
+  background-color: #181f32;
+  border: none;
+  width: 476px;
+  height: 52px;
+  flex-shrink: 0;
+  position: relative;
+  left: 5%;
+  top: 30%;
+  color: #fff;
+  text-align: right;
+  font-family: Segoe UI;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 10px;
+}
+
+button {
+  width: 100px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: none;
+  background: #eae3db;
+  color: #3b4664;
+  text-align: center;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  cursor: pointer;
+}
+
+#del{
+    background-color: #647299;
+    color: #FFF; 
+}
+
+#reset {
+  grid-area: 5/1/5/3;
+  justify-self: stretch;
+  background-color: #647299;
+  color: #FFF;
+  width: auto; 
+}
+
+#equals {
+  grid-area: 5/3/5/5;
+  justify-self: stretch;
+  background: #D13F30; 
+  color: #FFF;
+  width: auto; 
+}
